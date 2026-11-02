@@ -1,0 +1,16 @@
+{
+  "name":"Clearframe — Relational Pattern Atlas",
+  "short_name":"Clearframe",
+  "description":"A private pattern dictionary for reality-checking learned emotional responses.",
+  "start_url":"./index.html#home",
+  "scope":"./",
+  "id":"./index.html",
+  "display":"standalone",
+  "background_color":"#f7f6f1",
+  "theme_color":"#171e2c",
+  "icons":[
+    {"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"},
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

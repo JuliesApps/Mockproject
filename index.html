@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#171e2c">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="A private, offline-capable atlas of learned relational responses, evidence checks, and grounded next steps.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Clearframe — Pattern Atlas</title>
+  <script defer src="./data.js"></script>
+  <script defer src="./evidence.js"></script>
+  <script defer src="./reasoner.js"></script>
+  <script defer src="./store.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Clearframe home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>clearframe</strong><small>RELATIONAL PATTERN ATLAS</small></span></a>
+      <div class="nav-section-label">YOUR WORKSPACE</div>
+      <nav class="nav-list" aria-label="Workspace">
+        <a href="#home" data-nav="home"><span class="nav-icon">✦</span> Process an emotion</a>
+        <a href="#atlas" data-nav="atlas"><span class="nav-icon">◎</span> Pressure-Point Atlas</a>
+        <a href="#dictionary" data-nav="dictionary"><span class="nav-icon">▤</span> Pattern dictionary</a>
+        <a href="#evidence" data-nav="evidence"><span class="nav-icon">◈</span> Present-day signals</a>
+        <a href="#moments" data-nav="moments"><span class="nav-icon">◷</span> Saved moments</a>
+      </nav>
+      <div class="nav-section-label second-group">YOUR CONFIGURATION</div>
+      <nav class="nav-list" aria-label="Configuration">
+        <a href="#roles" data-nav="roles"><span class="nav-icon">♧</span> Roles & themes</a>
+        <a href="#data" data-nav="data"><span class="nav-icon">⌑</span> Data & privacy</a>
+      </nav>
+      <div class="sidebar-end">
+        <div class="sidebar-note"><span class="sidebar-note-dot"></span><strong>Patterns are hypotheses.</strong><p>A feeling is real. Its explanation still deserves a fair check.</p></div>
+        <div class="sidebar-footer">Private by default · Works offline</div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><button id="menu-toggle" class="icon-button mobile-only" aria-label="Open menu" aria-expanded="false">☰</button><span id="breadcrumb" class="breadcrumb">Workspace / Process an emotion</span><span class="topbar-right"><span class="status-dot"></span>Stored on this device</span></header>
+      <main id="app" class="main-content" tabindex="-1" aria-live="polite"><div class="loading-state">Opening your atlas…</div></main>
+    </div>
+  </div>
+  <dialog id="detail-dialog" class="modal"><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="nojs">Clearframe needs JavaScript enabled. All processing happens within your browser; no account or server is used for your entries.</p></noscript>
+</body>
+</html>
